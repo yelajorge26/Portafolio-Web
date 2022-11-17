@@ -1,0 +1,121 @@
+@use "mixins" as mixin;
+
+$light-color: #f0eff6;
+$dark-color: #111827;
+$principal-color: #14668b;
+
+.button-type-screen{
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.menu-list-button{
+    border: none;
+    background-color: transparent;
+    font-size: 2.5rem;
+}
+
+.principal-button{
+    background-color: $principal-color;
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 0.5rem;
+    border: 1px solid $principal-color;
+    cursor: pointer;
+    &:hover{
+        background-color: white;
+        color: #14668b;
+        border: 1px solid $principal-color;
+    }
+}
+
+.section-title{
+    font-size: 2rem;
+}
+
+.img-c{
+    border-radius: 2rem;
+}
+
+.img-hab{
+    width: 4rem;
+    height: 4rem;
+}
+
+.img-pro{
+    width: 25rem;
+    height: 15rem;
+    border-radius: 0.5rem;
+    &:hover{
+        transition-duration: 500ms;
+        opacity: 0.2;
+    }
+}
+
+.img-gh{
+    position: absolute;
+    display: none;
+    width: 4rem;
+    height: 4rem;
+}
+
+.info-proyect{
+    position: absolute;
+    display: none;
+}
+
+.span-text{
+    margin-left: 2rem;
+    @include mixin.text-styles(RadioCanada-SemiBold, 1rem)
+}
+
+.btn-up{
+    border: none;
+    background-color: transparent;
+    color: $principal-color;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+// POPUP
+.popup-send{
+    display: none;
+    // background-color: $principal-color;
+    background-color: rgb(59, 151, 59);
+    border-radius: 1rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem 4rem;
+
+    .x-item{
+        font-size: 2rem;
+        color: white;
+        display: flex;
+        justify-content: end;
+        margin-right: -3rem;
+        margin-top: -1rem;
+    }
+
+    .popup-mss{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .mss-item-i{
+            font-size: 3rem;
+            color: white;
+        }
+
+        .mss-item-p{
+            margin-top: 0.5rem;
+            color: white;
+            margin-left: -3rem;
+            margin-right: -3rem;
+            text-align: center;
+        }
+    }
+}

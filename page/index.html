@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Portafolio</title>
+</head>
+<body> 
+    <header>
+        <nav class="nav-container">
+            <div class="menu-container">
+                <div class="menu-list-button">
+                    <label for="menu-list-button" class="bi bi-list icon-menu"></label>
+                </div>
+                <ul class="menu-container2">
+                    <li class="list-element-2"><a class="content-text" href="#">INICIO</a></li>
+                    <li class="list-element-1"><a class="content-text" href="#about">SOBRE MI</a></li>
+                    <li class="list-element-3"><a class="content-text" href="#skills">HABILIDADES</a></li>
+                    <li class="list-element-4"><a class="content-text" href="#proyects">PROYECTOS</a></li>
+                    <li class="list-element-5"><a class="content-text" href="#contact">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div class="cv-container">
+                <a href="../cv/cv_jorgeyela.pdf" download="cv_jorgeyela">
+                    <button class="principal-button">Descargar CV</button>
+                </a>
+            </div>
+            <div class="btn-dark-container">
+                <button class="button-type-screen"><i class="bi bi-moon-fill icon-dark"></i></button>
+            </div>
+        </nav>
+        <input type="checkbox" id="menu-list-button">
+        <div class="container-menu">
+            <div class="cont-menu">
+                <nav>
+                    <a class="nav-link" href="#">INICIO</a>
+                    <a class="nav-link" href="#about">SOBRE MI</a>
+                    <a class="nav-link" href="#skills">HABILIDADES</a>
+                    <a class="nav-link" href="#proyects">PROYECTOS</a>
+                    <a class="nav-link" href="#contact">CONTACTO</a>
+                </nav>
+                <label for="menu-list-button" class="bi bi-x-lg"></label>
+            </div>
+        </div>
+    </header>
+    <section class="presentation-container" id="home">
+        <article class="personal-image">
+            <img class="img-c" src="../assets/img/perfil_image.jpg" alt="perfil image">
+        </article>
+        <article class="personal-presentation">
+            <h1 class="content-text pres-name">Jorge Yela Vélez</h1>
+            <h2 class="content-text pres-poss">Full Stack Developer</h2>
+            <p class="content-text pres-desc">Aprender y Compartir</p>
+        </article>
+    </section>
+    <section class="about" id="about">
+        <h2 class="section-title content-text">Sobre mi</h2>
+        <p class="about-description content-text">
+            Los algoritmos me han permitido siempre desarrollar mis habilidades creativas y lógicas, pues en el ejercicio de automatizar procesos me he encontrado con obstáculos que he logrado convertir de forma inmediata en oportunidades de crecer como profesional, esto conforme me adentraba cada vez mas en este amplio, atractivo y siempre desafiante mundo de la programación.
+        </p>
+        <p class="about-description content-text">
+            Desde entonces me dedico a crear experiencias sostenibles y escalables, siempre con la perspectiva de adaptarme a distintas circunstancias y aprender distintas tecnologías que me permitan poner a disposición de la comunidad soluciones atractivas. 
+        </p>
+    </section>
+    <section class="skills" id="skills">
+        <h2 class="section-title content-text title-hab">Habilidades</h2>
+        <section class="a-pack">
+            <article class="skill">
+                <img src="../assets/img/html-logo.png" class="img-hab">
+                <span class="content-text span-text">HTML</span>
+            </article>
+            <article class="skill">
+                <img src="../assets/img/css-logo.png" class="img-hab">
+                <span class="content-text span-text">CSS</span>
+            </article>
+            <article class="skill">
+                <img src="../assets/img/sass-logo.png" class="img-hab">
+                <span class="content-text span-text">SASS</span>
+            </article>
+        </section>
+        <section class="a-pack">
+            <article class="skill">
+                <img src="../assets/img/js-logo.png" class="img-hab">
+                <span class="content-text span-text">JS</span>
+            </article>
+            <article class="skill">
+                <img src="../assets/img/node-logo.png" class="img-hab">
+                <span class="content-text span-text">NODE</span>
+            </article>
+            <article class="skill">
+                <img src="../assets/img/python-logo.png" class="img-hab">
+                <span class="content-text span-text">PYTHON</span>
+            </article>
+        </section>
+        <section class="a-pack">
+            <article class="skill">
+                <img src="../assets/img/mysql-logo.png" class="img-hab">
+                <span class="content-text span-text">MYSQL</span>
+            </article>
+            <article class="skill">
+                <img src="../assets/img/firebase-logo.png" class="img-hab">
+                <span class="content-text span-text">FIREBASE</span>
+            </article>
+            <article class="skill">
+                <img src="../assets/img/git-logo.png" class="img-hab">
+                <span class="content-text span-text">GIT</span>
+            </article>
+        </section>
+        <section class="a-pack">
+            <article class="skill">
+                <img src="../assets/img/ionic-logo.png" class="img-hab">
+                <span class="content-text span-text">IONIC</span>
+            </article>
+            <article class="skill">
+                <img src="../assets/img/flutter-logo.png" class="img-hab">
+                <span class="content-text span-text">FLUTTER</span>
+            </article>
+        </section>
+    </section>
+    <section class="proyects" id="proyects">
+        <h2 class="section-title content-text title-pro">Proyectos</h2>
+        <section class="b-pack">
+            <article class="proyect">
+                <img class="img-pro" src="../assets/img/python-project-2.png">
+                <article class="info-proyect">
+                    <p class="pro-des content-text">Descripción: Extracción y limpieza de datos API twitter</p>
+                    <p class="pro-tec content-text">Tecnologias: Python - Django - SQlite</p>
+                </article>
+                <a class="img-gh" href="" target="_blank"><img src="../assets/img/github-logo.png"></a>
+            </article>
+            <article class="proyect">
+                <img class="img-pro" src="../assets/img/proyect-test.jpg">
+                <article class="info-proyect">
+                    <p class="pro-des content-text">Descripción: Extracción de comentarios API twitter</p>
+                    <p class="pro-tec content-text">Tecnologias: Python - Django</p>
+                </article>
+                <a class="img-gh" href="" target="_blank"><img src="../assets/img/github-logo.png"></a>
+            </article>
+        </section>
+        <section class="b-pack">
+            <article class="proyect">
+                <img class="img-pro" src="../assets/img/proyect-test.jpg">
+                <article class="info-proyect">
+                    <p class="pro-des content-text">Descripción: Extracción de comentarios API twitter</p>
+                    <p class="pro-tec content-text">Tecnologias: Python - Django</p>
+                </article>
+                <a class="img-gh" href="" target="_blank"><img src="../assets/img/github-logo.png"></a>
+            </article>
+            <article class="proyect">
+                <img class="img-pro" src="../assets/img/proyect-test.jpg">
+                <article class="info-proyect">
+                    <p class="pro-des content-text">Descripción: Extracción de comentarios API twitter</p>
+                    <p class="pro-tec content-text">Tecnologias: Python - Django</p>
+                </article>
+                <a class="img-gh" href="" target="_blank"><img src="../assets/img/github-logo.png"></a>
+            </article>
+        </section>
+    </section>
+    <section class="contact" id="contact">
+        <section class="contact-head">
+            <h2 class="contact-title content-text section-title">Contacto</h2>
+        </section>
+        <section class="contact-body">
+            <section class="social-contact">
+                <section class="contact-item item-1">
+                    <i class="target-phone target bi bi-telephone-fill"></i>
+                    <article class="personal-info">
+                        <span class="span-info">Teléfono</span>
+                        <span class="span-info">(593) 98-520-5364</span>
+                    </article>
+                </section>
+                <section class="contact-item item-2">
+                    <i class="target-email target bi bi-envelope-fill"></i>
+                    <article class="personal-info">
+                        <span class="span-info">Correo</span>
+                        <span class="span-info">yelajorge26@gmail.com</span>
+                    </article>
+                </section>
+                <section class="contact-item item-3">
+                    <i class="target-github target bi bi-github"></i>
+                    <article class="personal-info">
+                        <span class="span-info">GitHub</span>
+                        <span class="span-info">@yelajorge26</span>
+                    </article>
+                </section>
+                <section class="contact-item item-4">
+                    <i class="target-linkedin target bi bi-linkedin"></i>
+                    <article class="personal-info">
+                        <span class="span-info">Linkedin</span>
+                        <span class="span-info">@yelaJorge</span>
+                    </article>
+                </section>
+                <section class="contact-item item-5">
+                    <i class="target-twitter target bi bi-twitter"></i>
+                    <article class="personal-info">
+                        <span class="span-info">Twitter</span>
+                        <span class="span-info">@jorge_yela</span>
+                    </article>
+                </section>
+            </section>
+            <form class="contact-form">
+                <input class="in-text" type="text" name="name" placeholder="Ingresa tu nombre *" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$" required>
+                <input class="in-text" type="email" name="email" placeholder="Ingresa tu correo *" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                <textarea class="in-text" name="comments" cols="40" rows="15" placeholder="Comentario *" required></textarea>
+                <input class="principal-button form-send-button" type="submit" value="ENVIAR">
+            </form>
+            <section class="popup-send">
+                <i class="x-item bi bi-x-lg"></i>
+                <article class="popup-mss">
+                    <i class="mss-item-i bi bi-send"></i>
+                    <p class="mss-item-p">Enviando...</p>
+                </article>
+            </section>
+        </section>
+    </section>
+    <section class="footer">
+        <button class="btn-up">
+            <i class="bi bi-arrow-up-circle-fill"></i>
+        </button>
+    </section>
+</body>
+<script src="../js/dark.js"></script>
+<script src="../js/menu.js"></script>
+<script src="../js/form.js"></script>
+</html>
